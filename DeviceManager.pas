@@ -17,7 +17,7 @@ uses
 type
   { Информация об устройстве }
   TDeviceInfo = record
-    ID: Integer;
+    ID: integer;
     Name: string;
     Description: string;
     Connected: Boolean;
@@ -211,7 +211,7 @@ begin
     SensorConfig.MaxValue := 100;
     SensorConfig.DefaultValue := 20;
     SensorConfig.UnitName := '°C';
-    FSensorFactory.CreateSensor(FChildForm, SensorConfig);
+    FSensorFactory.CreateSensor( SensorConfig);
 
     { Сенсор 2: Влажность }
     SensorConfig.ID := 2;
@@ -221,7 +221,7 @@ begin
     SensorConfig.MaxValue := 100;
     SensorConfig.DefaultValue := 50;
     SensorConfig.UnitName := '%';
-    FSensorFactory.CreateSensor(FChildForm, SensorConfig);
+    FSensorFactory.CreateSensor( SensorConfig);
 
     { Сенсор 3: Давление }
     SensorConfig.ID := 3;
@@ -231,7 +231,7 @@ begin
     SensorConfig.MaxValue := 800;
     SensorConfig.DefaultValue := 760;
     SensorConfig.UnitName := 'мм рт.ст.';
-    FSensorFactory.CreateSensor(FChildForm, SensorConfig);
+    FSensorFactory.CreateSensor( SensorConfig);
   end
   else if FInfo.ID = 2 then
   begin
@@ -244,7 +244,7 @@ begin
     SensorConfig.MaxValue := 100;
     SensorConfig.DefaultValue := 45;
     SensorConfig.UnitName := '%';
-    FSensorFactory.CreateSensor(FChildForm, SensorConfig);
+    FSensorFactory.CreateSensor( SensorConfig);
 
     { Сенсор 2: Температура }
     SensorConfig.ID := 2;
@@ -254,7 +254,7 @@ begin
     SensorConfig.MaxValue := 50;
     SensorConfig.DefaultValue := 22;
     SensorConfig.UnitName := '°C';
-    FSensorFactory.CreateSensor(FChildForm, SensorConfig);
+    FSensorFactory.CreateSensor( SensorConfig);
 
     { Сенсор 3: Давление }
     SensorConfig.ID := 3;
@@ -264,7 +264,7 @@ begin
     SensorConfig.MaxValue := 800;
     SensorConfig.DefaultValue := 755;
     SensorConfig.UnitName := 'мм рт.ст.';
-    FSensorFactory.CreateSensor(FChildForm, SensorConfig);
+    FSensorFactory.CreateSensor( SensorConfig);
   end;
 end;
 
