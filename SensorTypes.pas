@@ -19,6 +19,9 @@ type
     stDigital,     // Цифровой сенсор (CheckBox, Edit)
     stNumeric,     // Числовой сенсор (Edit, SpinEdit)
     stText,        // Текстовый сенсор (Memo, Edit)
+    stTemperature, // Датчик температуры
+    stHumidity,    // Датчик влажности
+    stPressure,    // Датчик давления
     stCustom       // Пользовательский тип
   );
 
