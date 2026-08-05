@@ -23,6 +23,7 @@ type
     SensorType: TSensorType;
     MinValue: Variant;
     MaxValue: Variant;
+    DefaultValue: Variant;
     UnitName: string;
     Row: Integer;        // Позиция на форме
     Col: Integer;
