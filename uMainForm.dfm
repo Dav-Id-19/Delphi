@@ -1,7 +1,7 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  Caption = 'РЈРїСЂР°РІР»РµРЅРёРµ СѓСЃС‚СЂРѕР№СЃС‚РІР°РјРё Рё СЃРµРЅСЃРѕСЂР°РјРё'
+  Caption = 'Управление устройствами и сенсорами'
   ClientHeight = 600
   ClientWidth = 800
   Color = clBtnFace
@@ -72,36 +72,35 @@ object MainForm: TMainForm
         Width = 50
       end
       item
-        Width = 50
-      end
-    end
+        Width = 100
+      end>
     SimplePanel = False
   end
   object mnuMain: TMainMenu
     Left = 640
     Top = 8
     object mnuFile: TMenuItem
-      Caption = 'Р¤Р°Р№Р»'
+      Caption = 'Файл'
       object mnuExit: TMenuItem
-        Caption = 'Р’С‹С…РѕРґ'
+        Caption = 'Выход'
         OnClick = mnuExitClick
       end
     end
     object mnuDevices: TMenuItem
-      Caption = 'РЈСЃС‚СЂРѕР№СЃС‚РІР°'
+      Caption = 'Устройства'
       object mnuConnect: TMenuItem
-        Caption = 'РџРѕРґРєР»СЋС‡РёС‚СЊ'
+        Caption = 'Подключить'
         OnClick = mnuConnectClick
       end
       object mnuDisconnect: TMenuItem
-        Caption = 'РћС‚РєР»СЋС‡РёС‚СЊ'
+        Caption = 'Отключить'
         OnClick = mnuDisconnectClick
       end
     end
     object mnuHelp: TMenuItem
-      Caption = 'РЎРїСЂР°РІРєР°'
+      Caption = 'Справка'
       object mnuAbout: TMenuItem
-        Caption = 'Рћ РїСЂРѕРіСЂР°РјРјРµ'
+        Caption = 'О программе'
         OnClick = mnuAboutClick
       end
     end
@@ -120,14 +119,14 @@ object MainForm: TMainForm
     object btnConnect: TToolButton
       Left = 0
       Top = 0
-      Caption = 'РџРѕРґРєР»СЋС‡РёС‚СЊ'
+      Caption = 'Подключить'
       ImageIndex = 0
       OnClick = btnConnectClick
     end
     object btnDisconnect: TToolButton
       Left = 67
       Top = 0
-      Caption = 'РћС‚РєР»СЋС‡РёС‚СЊ'
+      Caption = 'Отключить'
       ImageIndex = 1
       OnClick = btnDisconnectClick
     end
@@ -142,7 +141,7 @@ object MainForm: TMainForm
     object btnRefresh: TToolButton
       Left = 142
       Top = 0
-      Caption = 'РћР±РЅРѕРІРёС‚СЊ'
+      Caption = 'Обновить'
       ImageIndex = 2
       OnClick = btnRefreshClick
     end
