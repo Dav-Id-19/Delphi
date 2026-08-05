@@ -203,11 +203,11 @@ begin
   { Создаем тестовые устройства по ТЗ }
 
   { Устройство 1: ID1 - 1 сенсор с 3 значениями (Температура, Влажность, Давление) }
-  Dev1 := TDevice.Create;
-  Dev1.ID := 'ID1';
-  Dev1.Name := 'Устройство 1 (Климатический комплекс)';
-  Dev1.Connected := False;
 
+  Dev1.Info.ID := 1;
+  Dev1.Info.Name := 'Устройство 1 (Климатический комплекс)';
+  Dev1.Connected := False;
+  Dev1 := TDevice.Create(Dev1.Info, pnlDevices);
   // Добавляем 1 мультисенсор
   with Dev1.Sensors.Add do
   begin
