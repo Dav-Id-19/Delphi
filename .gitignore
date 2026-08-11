@@ -1,0 +1,37 @@
+```
+# Pascal/Delphi compiled files
+*.dcu
+*.o
+*.obj
+*.ppu
+*.compiled
+*.compiled.*
+*Dsk.*
+*BAK*
+*.~*
+*.rsm
+*.drc
+*.map
+*.tds
+*.local
+
+# Dependencies
+*.groupproj.local
+*.projdata
+*.stat
+
+# IDE
+*.identcache
+*.otares
+*.tvsconfig
+*.bdsproj
+*.bdsgroup
+*.sdsproj
+*.sdsproj.local
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Icon?
+*.orig
+```
